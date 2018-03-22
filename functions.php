@@ -618,14 +618,14 @@ function social_meta_properties(){
         $smp->description = $excerpt;
         $smp->image =  thumbnail_of_post_url( $post_id, 'large' );
         if ($smp->image == '') {
-            $smp->image =   get_template_directory_uri() . '/img/trans.png';
+            $smp->image =   get_template_directory_uri() . '/img/transcontinental_share.jpg';
         }
         $smp->url = get_the_permalink();
 
     } else {
         $smp->title =    get_bloginfo('name');
         $smp->description = get_bloginfo('description');
-        $smp->image =   get_template_directory_uri() . '/img/trans.png';
+        $smp->image =   get_template_directory_uri() . '/img/transcontinental_share.jpg';
         $smp->url = get_home_url();
     }
 
